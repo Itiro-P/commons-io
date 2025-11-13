@@ -167,6 +167,11 @@ file comparators, endian transformation classes, and much more.
     <pluginManagement>
       <plugins>
         <plugin>
+          <groupId>org.pitest</groupId>
+          <artifactId>pitest-maven</artifactId>
+          <version>1.14.2</version>
+        </plugin>
+        <plugin>
           <groupId>org.apache.rat</groupId>
           <artifactId>apache-rat-plugin</artifactId>
           <configuration>
@@ -186,7 +191,7 @@ file comparators, endian transformation classes, and much more.
             <enableRulesSummary>false</enableRulesSummary>
             <includeTestSourceDirectory>true</includeTestSourceDirectory>
           </configuration>
-        </plugin>      
+        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
@@ -370,7 +375,7 @@ file comparators, endian transformation classes, and much more.
         <jdk>[21,)</jdk>
       </activation>
       <properties>
-        <EnableDynamicAgentLoading>-XX:+EnableDynamicAgentLoading</EnableDynamicAgentLoading>  
+        <EnableDynamicAgentLoading>-XX:+EnableDynamicAgentLoading</EnableDynamicAgentLoading>
       </properties>
     </profile>
     <profile>
